@@ -103,6 +103,7 @@ class Solution3 {
      */
      public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> count = new HashMap<>();
+        @SuppressWarnings("unchecked")
         List<Integer> bucket[] = new ArrayList[nums.length + 1];                
         
         for (int num : nums)
